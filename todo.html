@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ToDo App</title>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+  <!-- <h1 id="main-heading">ToDo App</h1> -->
+
+  <form onsubmit="addTodo(); return false;">
+    <div class="grid-container">
+      <input id="todo-input" type="text" placeholder="Enter Todo here.." required>
+      <input id="todo-date" type="date">
+      <button type="submit" class="btn-todo">ADD</button>
+    </div>
+  </form>
+  
+  <!-- <div class="grid-container">
+    <input id="todo-input" type="text" placeholder="Enter Todo here.." required>
+    <input id="todo-date" type="date">
+    <button class="btn-todo" onclick="addTodo();">ADD</button>
+  </div> -->
+  
+  <div class="todo-container grid-container"></div>
+
+  <script src="todo.js"></script>
+</body>
+</html>
